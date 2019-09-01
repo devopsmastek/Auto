@@ -14,7 +14,7 @@ node
     sh  "pwd"    
     def source = "/var/lib/jenkins/workspace/autoscaling_project/*.html}"
     def  destination = "/var/lib/tomcat8/webapps/"
-    sh "cp -r /var/lib/jenkins/workspace/autoscaling_project/*.html ${destination} "
+    sh "cp -r /var/lib/jenkins/workspace/autoscaling_project/*.html /var/lib/jenkins/ "
       
         }
       
