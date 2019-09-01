@@ -12,7 +12,8 @@ node
    stage ('deploy')
           {
     sh  "pwd"    
-    sh " echo $TARGET_IP"
+ 
+    print "DEBUG: parameter foo = ${env.TARGET_IP}"
     def source = "/var/lib/jenkins/workspace/autoscaling_project/*.html}"
     def  destination = "/var/lib/tomcat8/webapps/"
     sh "cp -r /var/lib/jenkins/workspace/autoscaling_project/*.html /var/lib/jenkins/ "
