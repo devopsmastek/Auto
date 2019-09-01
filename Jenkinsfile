@@ -12,9 +12,9 @@ node
    stage ('deploy')
           {
     sh  "pwd"    
-    def source = "/var/lib/jenkins/workspace/java_app_cloud_sonar/target/*.war}"
+    def source = "/var/lib/jenkins/workspace/autoscaling_project/*.html}"
     def  destination = "/var/lib/tomcat8/webapps/"
-    sh "cp -r /var/lib/jenkins/workspace/java_app_cloud_sonar/target/*.war ${destination} "
+    sh "cp -r /var/lib/jenkins/workspace/autoscaling_project/*.html ${destination} "
       
         }
       
