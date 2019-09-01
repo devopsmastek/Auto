@@ -16,7 +16,7 @@ node
     print "DEBUG: parameter foo = env.TARGET_IP"
     def source = "/var/lib/jenkins/workspace/autoscaling_project/*.html}"
     def  destination = "/var/lib/tomcat8/webapps/"
-    sh "cp -r /var/lib/jenkins/workspace/autoscaling_project/*.html /var/lib/jenkins/ "
+    sh "cp -r /var/lib/jenkins/workspace/autoscaling_project/*.html $(TARGET_IP)//var/lib/jenkins "
       
         }
       
