@@ -17,6 +17,8 @@ node
              
              if ( ${DEPLOY_TO_DEV} == 'true') {
     def source = "/var/lib/jenkins/workspace/autoscaling_project/*.html}"
+    def TARGET =  ${TARGET}
+    sh "echo '$TARGET'"
     def  destination = "/var/lib/tomcat8/webapps/"
          sshagent(['ubuntu']) {
         sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/autoscaling_project/*.html ubuntu@${TARGET}:/var/www/html/"
