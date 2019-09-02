@@ -17,7 +17,7 @@ node
              
              if ( ${DEPLOY_TO_DEV} == 'true') {
     def source = "/var/lib/jenkins/workspace/autoscaling_project/*.html}"
-    def TARGET =  ${TARGET}
+    def TARGET =  params.TARGET
     sh "echo '$TARGET'"
     def  destination = "/var/lib/tomcat8/webapps/"
          sshagent(['ubuntu']) {
