@@ -21,7 +21,7 @@ node
     sh "echo '$TARGET'"
     def  destination = "/var/lib/tomcat8/webapps/"
          sshagent(['ubuntu']) {
-        sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/autoscaling_project/*.html ubuntu@${TARGET}:/var/www/html/"
+        sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/autoscaling_project/*.html ubuntu@54.180.120.76:/var/www/html/"
 }                    
              }                           
         }
